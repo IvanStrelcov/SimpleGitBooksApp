@@ -48,7 +48,9 @@ export class BookDetailComponent implements OnInit {
     this.nextChapter = this.chapters[++this.currentChapter].path.replace('.md', '.json');
     this._booksService.getBookChapter(this.book.id, this.nextChapter)
       .subscribe( chapter => {
-        this.content = this._domSanitizer.bypassSecurityTrustHtml(chapter.sections[0].content);
+        let content = chapter.sections[0].content.replace(/(<\/?pre>)/g, '');
+        content = content.replace(/(<\/?code>)/g, '');
+        this.content = this._domSanitizer.bypassSecurityTrustHtml(content);
         window.scrollTo(0, 0);
         this.isMute = false;
       })
@@ -58,7 +60,9 @@ export class BookDetailComponent implements OnInit {
     this.nextChapter = this.chapters[--this.currentChapter].path.replace('.md', '.json');
     this._booksService.getBookChapter(this.book.id, this.nextChapter)
       .subscribe( chapter => {
-        this.content = this._domSanitizer.bypassSecurityTrustHtml(chapter.sections[0].content);
+        let content = chapter.sections[0].content.replace(/(<\/?pre>)/g, '');
+        content = content.replace(/(<\/?code>)/g, '');
+        this.content = this._domSanitizer.bypassSecurityTrustHtml(content);
         window.scrollTo(0, 0);
         this.isMute = false;
       })
