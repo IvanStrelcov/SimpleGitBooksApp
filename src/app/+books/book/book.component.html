@@ -1,0 +1,31 @@
+<div class="ibox">
+	<div class="ibox-content">
+		<a href="#" class="btn-link" [routerLink]="['/dashboard/books', book.name]">
+			<h2>
+				{{book?.title}}
+			</h2>
+		</a>
+		<div class="small m-b-xs">
+			<strong>{{book?.author?.name}}</strong> <span class="text-muted"><i class="fa fa-clock-o"></i> {{book.dates.created | date}}</span>
+		</div>
+		<p>
+			{{book?.description}}
+		</p>
+		<div class="row">
+			<div class="col-md-6">
+				<h5>Link:</h5>
+				<a [href]="book.urls.read" class="btn btn-primary btn-xs" type="button" target="_blank">Read on GitBook</a>
+			</div>
+			<div class="col-md-6">
+				<div class="small text-right">
+					<h5>Stats:</h5>
+					<div *ngIf="book.counts.stars !== 0"> <i class="fa fa-star"> </i> {{book.counts.stars}} stars </div>
+					<div *ngIf="book.counts.updates !== 0"> <i class="fa fa-clock-o"> </i> {{book.counts.updates}} updates </div>
+					<div *ngIf="book.counts.subscriptions !== 0"> <i class="fa fa-user-plus"> </i> {{book.counts.subscriptions}} subscriptions </div>
+					<div *ngIf="book.counts.discussions !== 0"> <i class="fa fa-comment"> </i> {{book.counts.discussions}} discussions </div>
+					<div *ngIf="book.counts.collaborators !== 0"> <i class="fa fa-users"> </i> {{book.counts.collaborators}} collaborators </div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>

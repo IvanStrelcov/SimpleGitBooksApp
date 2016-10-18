@@ -1,0 +1,8 @@
+.nav-header{
+  padding: 31px 25px;
+}
+@media all and (max-width: 768px){
+  .nav-header{
+    display: none;
+  }
+}

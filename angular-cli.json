@@ -15,7 +15,11 @@
       "prefix": "app",
       "mobile": false,
       "styles": [
-        "styles.css"
+        "../node_modules/bootstrap-sass/assets/stylesheets/_bootstrap.scss",
+        "../node_modules/font-awesome/scss/font-awesome.scss",
+        "../node_modules/open-sans-fontface/open-sans.scss",
+        "../node_modules/animate.css/animate.css",
+        "assets/scss/style.scss"
       ],
       "scripts": [],
       "environments": {
@@ -38,7 +42,7 @@
     }
   },
   "defaults": {
-    "styleExt": "css",
+    "styleExt": "scss",
     "prefixInterfaces": false
   }
 }
