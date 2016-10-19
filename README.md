@@ -1,31 +1,36 @@
-# SimpleGitBooksApp
+Angular 2.x Demo Application
+============================
 
-This project was generated with [angular-cli](https://github.com/angular/angular-cli) version 1.0.0-beta.15.
+Demo Application works with GitBook API for information about the books one user. [Demo](http://nixsolutions.github.io/demo-ng1-trend).
 
-## Development server
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+The "Angular 2.x Demo Application" is a reference application created to show how
+to develop Angular 2 SPA applications following the recommended best practices.
 
-## Code scaffolding
+Features
+--------
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive/pipe/service/class`.
+1. Получение списка книг одного пользователя
+2. Подсчет количество лайков, апдейтов, обсуждений, контрибьютеров и подписок (watchers) на книгу
+3. Получение детальной информации по книге
+    * описание
+    * автор проекта
+    * дата создания
+    * чтение по главам книги
 
-## Build
+Requirements
+------------
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `-prod` flag for a production build.
+  * Node.js 4.0 or higher;
+  * NPM 3.x;
 
-## Running unit tests
+Technologies
+------------
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/). 
-Before running the tests make sure you are serving the app via `ng serve`.
-
-## Deploying to Github Pages
-
-Run `ng github-pages:deploy` to deploy to Github Pages.
-
-## Further help
-
-To get more help on the `angular-cli` use `ng --help` or go check out the [Angular-CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+* [Angular 2.0](https://angular.io)
+* [Bootstrap](http://getbootstrap.com)
+* [Angular-CLI](https://github.com/angular/angular-cli)
+* [Font Awesome](http://fontawesome.io)
+* [TypeScript](https://www.typescriptlang.org/)
+* [TSLint](https://palantir.github.io/tslint/)
+* [EditorConfig](http://editorconfig.org/)
+* [RxJS](http://reactivex.io/rxjs/)
