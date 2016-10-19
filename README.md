@@ -1,7 +1,7 @@
 Angular 2.x Demo Application
 ============================
 
-Demo Application works with GitBook API for information about the books one user. [Demo](http://nixsolutions.github.io/demo-ng1-trend).
+Demo Application works with GitBook API for information about the books one user. [Demo](http://nixsolutions.github.io/simple-git-books-app).
 
 The "Angular 2.x Demo Application" is a reference application created to show how
 to develop Angular 2 SPA applications following the recommended best practices.
